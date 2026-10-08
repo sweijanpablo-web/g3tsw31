@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dark Veil | Sweijan Dwayne P. Alegre</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro" role="status">
+  <svg id="hood" viewBox="0 0 120 120" aria-label="Hooded figure emblem">
+    <g class="g">
+      <path d="M60 6C36 6 22 26 22 48c0 10-6 20-14 32 10 6 20 8 28 8l4 24h40l4-24c8 0 18-2 28-8-8-12-14-22-14-32C98 26 84 6 60 6Z" fill="#0a0a0a" stroke="#dc143c" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M60 24c-15 0-25 11-25 26s10 24 25 24 25-9 25-24-10-26-25-26Z" fill="#000"/>
+      <path d="M44 46l12 4-2 5-11-3ZM76 46l-12 4 2 5 11-3Z" class="eye" fill="#dc143c" style="filter:drop-shadow(0 0 5px #dc143c)"/>
+    </g>
+  </svg>
+  <div id="boot" class="mono" aria-live="polite"></div>
+  <button id="skip" type="button">SKIP INTRO</button>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#home">DARK_VEIL</a>
+    <button class="burger" id="burger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+    <nav aria-label="Main"><ul id="menu">
+      <li><a href="#home">HOME</a></li><li><a href="#about">ABOUT</a></li><li><a href="#achievements">ACHIEVEMENTS</a></li><li><a href="#education">EDUCATION</a></li><li><a href="#skills">SKILLS</a></li><li><a href="#projects">PROJECTS</a></li><li><a href="#contact">CONTACT</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home"><div class="wrap">
+    <div>
+      <div class="status"><b></b>SYSTEM STATUS: ONLINE</div>
+      <h1 id="hName"></h1>
+      <p class="role" id="hRole"></p>
+      <p id="typed" aria-label="Building skills. Solving problems. Creating solutions."></p>
+      <div class="btns"><a class="btn" href="#achievements">VIEW MY ACHIEVEMENTS</a><a class="btn ghost" href="#personal">EXPLORE MY PROFILE</a></div>
+    </div>
+    <div class="avatar"><img id="photo" alt="Profile photo" hidden><span id="ini"></span></div>
+  </div></section>
+
+  <section id="personal"><div class="wrap"><h2><span class="n">01 //</span>PERSONAL DATA</h2><div class="grid" id="data"></div></div></section>
+  <section id="about"><div class="wrap"><h2><span class="n">02 //</span>ABOUT ME</h2><div class="term"><div class="p">$ cat about_me.txt</div><p id="aboutTxt"></p></div></div></section>
+  <section id="achievements"><div class="wrap"><h2><span class="n">03 //</span>COLLEGE ACHIEVEMENTS</h2><div class="grid" id="ach" style="grid-template-columns:repeat(auto-fit,minmax(290px,1fr))"></div></div></section>
+  <section id="education"><div class="wrap"><h2><span class="n">04 //</span>EDUCATIONAL BACKGROUND</h2><div class="tl" id="tl"></div></div></section>
+  <section id="skills"><div class="wrap"><h2><span class="n">05 //</span>TECHNICAL SKILLS</h2><div class="grid" id="sk"></div></div></section>
+  <section id="projects"><div class="wrap"><h2><span class="n">06 //</span>PROJECTS</h2><div class="grid" id="pr"></div></div></section>
+  <section id="contact"><div class="wrap"><h2><span class="n">07 //</span>CONTACT</h2><div class="links" id="ct"></div></div></section>
+</main>
+
+<footer><div>&copy; 2026 <span id="fName"></span></div><div>Built with curiosity, persistence, and code.</div><div class="st">&gt; SYSTEM STATUS: ONLINE</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
